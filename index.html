@@ -1,186 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horario Alumno</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        .header {
-            text-align: left;
-            margin-bottom: 20px;
-        }
-    </style>
+    <title>Horario de Medicación</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
 
-<div class="header">
-    <p><strong>Nombre:</strong> FACUNDO EMMANUEL AHUMADA ESTRELLA</p>
-    <p><strong>Rut:</strong> 21869762-3</p>
-    <p><strong>Nombre del Plan:</strong> INGENIERÍA CIVIL EN COMPUTACIÓN E INFORMÁTICA PLAN 2017</p>
-    <p><strong>Información Periodo:</strong> 2024-02</p>
-    <p><strong>Código del Plan:</strong> IC05</p>
-</div>
+<body class="text-gray-800">
 
-<table>
-    <thead>
-        <tr>
-            <th>Hora</th>
-            <th>Lunes</th>
-            <th>Martes</th>
-            <th>Miércoles</th>
-            <th>Jueves</th>
-            <th>Viernes</th>
-            <th>Sábado</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>08:15 - 09:35</td>
-            <td>CALCULO I<br>SALA 31<br>TEO - SANTIAGO (D) (2S) @ IC05</td>
-            <td>ÁLGEBRA I<br>TEO - SANTIAGO (D) (2S) @ IC05</td>
-            <td>QUÍMICA GENERAL<br>TEO - SANTIAGO (D) (2S) @ IC05</td>
-            <td>ÁLGEBRA I<br>TEO - SANTIAGO (D) (2S) @ IC05</td>
-            <td>QUÍMICA GENERAL<br>TEO - SANTIAGO (D) (2S) @ IC05</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>09:45 - 11:05</td>
-            <td>MECÁNICA<br>SALA Nº 201(H)<br>TEO - SANTIAGO (D) (2S) @ IC05</td>
-            <td>PROGRAMACIÓN ORIENTADA A OBJETOS<br>TEO - SANTIAGO (D) (2S)</td>
-            <td>CALCULO I<br>TEO - SANTIAGO (D) (2S) @ IC05</td>
-            <td></td>
-            <td>MECÁNICA<br>TEO - SANTIAGO (D) (2S) @ IC05</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>11:15 - 12:35</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>12:45 - 14:05</td>
-            <td>QUÍMICA GENERAL<br>LABORATORIO DE QUÍMICA Y MATERIALES</td>
-            <td>PROGRAMACIÓN ORIENTADA A OBJETOS<br>LAB - SANTIAGO (D) (2S)</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>14:15 - 15:35</td>
-            <td>MECÁNICA<br>LAB - SANTIAGO (D) (2S) @ IC05</td>
-            <td></td>
-            <td></td>
-            <td>ÁLGEBRA I<br>EJE - SANTIAGO (D) (2S) @ IC05</td>
-            <td>CALCULO I<br>EJE - SANTIAGO (D) (2S) @ IC05</td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
+    <!-- Header -->
+    <div class="p-4 bg-white shadow-sm flex items-center justify-between">
+        <div>
+            <p class="">Hola, Facundo.</p>
+            <p id="current-date" class="text-sm font-semibold"></p>
+        </div>
+        <div class="flex items-center space-x-4">
+            <button class="text-gray-500"><i class="fas fa-search"></i></button>
+            <button class="text-gray-500"><i class="fas fa-bell"></i></button>
+            <img src="src/Logo_nuevo_ucen.ico" alt="Foto de Perfil" class="w-10 h-10 rounded-full">
+        </div>
+    </div>
 
-<table>
-    <thead>
-        <tr>
-            <th>Código</th>
-            <th>Sec</th>
-            <th>Grupo</th>
-            <th>Nombre</th>
-            <th>Profesor</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>3233</td>
-            <td>21</td>
-            <td>L.E.R - SANTIAGO (D) (2S) @ IC05</td>
-            <td>ÁLGEBRA I</td>
-            <td>ÓSCAR ENRIQUE CATALÁN MOYA</td>
-        </tr>
-        <tr>
-            <td>3225</td>
-            <td>20</td>
-            <td>TEO - SANTIAGO (D) (2S) @ IC05</td>
-            <td>ÁLGEBRA I</td>
-            <td>JOCELYN MAYRA CARRIÑO VÁSQUEZ</td>
-        </tr>
-        <tr>
-            <td>3226</td>
-            <td>11</td>
-            <td>EJE - SANTIAGO (D) (2S) @ IC05</td>
-            <td>CALCULO I</td>
-            <td>JOCELYN MAYRA CARRIÑO VÁSQUEZ</td>
-        </tr>
-        <tr>
-            <td>3226</td>
-            <td>20</td>
-            <td>TEO - SANTIAGO (D) (2S) @ IC05</td>
-            <td>CALCULO I</td>
-            <td>RODRIGO PATRICIO PÉREZ ARANCIBIA</td>
-        </tr>
-        <tr>
-            <td>14704</td>
-            <td>21</td>
-            <td>LAB - SANTIAGO (D) (2S) @ IC05</td>
-            <td>MECÁNICA</td>
-            <td>CARLOS FRANCISCO OCHOA VILLANUEVA</td>
-        </tr>
-        <tr>
-            <td>14704</td>
-            <td>20</td>
-            <td>TEO - SANTIAGO (D) (2S) @ IC05</td>
-            <td>MECÁNICA</td>
-            <td>ARTURO CRISTIAN VILLALTA FUENTES</td>
-        </tr>
-        <tr>
-            <td>19804</td>
-            <td>11</td>
-            <td>LAB - SANTIAGO (D) (2S)</td>
-            <td>PROGRAMACIÓN ORIENTADA A OBJETOS</td>
-            <td>D’ESKINA PORA</td>
-        </tr>
-        <tr>
-            <td>19804</td>
-            <td>10</td>
-            <td>TEO - SANTIAGO (D) (2S)</td>
-            <td>PROGRAMACIÓN ORIENTADA A OBJETOS</td>
-            <td>CRISTIAN EDUARDO MUZZILIA CASTRO</td>
-        </tr>
-        <tr>
-            <td>3267</td>
-            <td>12</td>
-            <td>LAB - SANTIAGO (D) (2S) @ IC05</td>
-            <td>QUÍMICA GENERAL</td>
-            <td>MANUEL DUARTE MERMUDO</td>
-        </tr>
-        <tr>
-            <td>3267</td>
-            <td>10</td>
-            <td>TEO - SANTIAGO (D) (2S) @ IC05</td>
-            <td>QUÍMICA GENERAL</td>
-            <td>SERGIO PATRICIO CÁRDENAS MUÑOZ</td>
-        </tr>
-    </tbody>
-</table>
+    <!-- Calendar -->
+    <div class="px-4 py-2 bg-white shadow-sm">
+        <div id="day-buttons" class="flex justify-between items-center mt-2">
+            <button onclick="loadSchedule('days/lunes.html', this)"
+                class="day-button px-5 rounded-full bg-white border-2 border-gray-200">Lunes</button>
+            <button onclick="loadSchedule('days/martes.html', this)"
+                class="day-button px-5 rounded-full bg-white border-2 border-gray-200">Martes</button>
+            <button onclick="loadSchedule('days/miercoles.html', this)"
+                class="day-button px-5 rounded-full bg-white border-2 border-gray-200">Miércoles</button>
+            <button onclick="loadSchedule('days/jueves.html', this)"
+                class="day-button px-5 rounded-full bg-white border-2 border-gray-200">Jueves</button>
+            <button onclick="loadSchedule('days/viernes.html', this)"
+                class="day-button px-5 rounded-full bg-white border-2 border-gray-200">Viernes</button>
+        </div>
+    </div>
+
+    <!-- Schedule -->
+    <div id="schedule-container" class="mt-4 p-4">
+        <!-- Aquí se cargará el contenido de los archivos HTML correspondientes -->
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="fixed bottom-0 w-full bg-white p-4 flex justify-between items-center shadow-md">
+        <button class="text-green-500"><i class="fas fa-home"></i></button>
+        <button class="text-gray-500"><i class="fas fa-th"></i></button>
+        <button class="text-gray-500"><i class="fas fa-calendar-alt"></i></button>
+        <button class="text-gray-500"><i class="fas fa-user"></i></button>
+    </div>
+
+    <script>
+        function loadSchedule(dayFile, btn) {
+            // Cambia el color del botón seleccionado
+            const buttons = document.querySelectorAll('.day-button');
+            buttons.forEach(button => button.classList.remove('bg-blue-500', 'text-white'));
+            btn.classList.add('bg-blue-500', 'text-white');
+
+            // Carga el contenido del archivo HTML correspondiente
+            fetch(dayFile)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('schedule-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error al cargar el horario:', error));
+        }
+
+        function getToday() {
+            const days = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
+            const today = new Date();
+            const dayIndex = today.getDay();  // Obtiene el índice del día de la semana (0-6)
+            const formattedDate = today.toLocaleDateString('es-ES', { year: 'numeric', month: 'short', day: 'numeric' });
+            document.getElementById('current-date').textContent = formattedDate;
+
+            const dayButtons = document.querySelectorAll('.day-button');
+            const dayFiles = ['days/lunes.html', 'days/martes.html', 'days/miercoles.html', 'days/jueves.html', 'days/viernes.html'];
+
+            if (dayIndex >= 1 && dayIndex <= 5) {
+                // Si el día es de lunes a viernes
+                const button = dayButtons[dayIndex - 1];
+                loadSchedule(dayFiles[dayIndex - 1], button);
+            } else {
+                // Si es sábado o domingo, cargar el lunes por defecto
+                const button = dayButtons[0];
+                loadSchedule('days/lunes.html', button);
+            }
+        }
+
+        // Llamar a la función cuando el DOM esté cargado
+        document.addEventListener('DOMContentLoaded', getToday);
+    </script>
 
 </body>
+
 </html>
