@@ -19,25 +19,26 @@
         <div class="flex items-center space-x-4">
             <button class="text-gray-500"><i class="fas fa-search"></i></button>
             <button class="text-gray-500"><i class="fas fa-bell"></i></button>
-            <img src="src/Logo_nuevo_ucen.ico" alt="Foto de Perfil" class="w-10 h-10 rounded-full">
+            <img src="src/Logo_nuevo_ucen (1).ico" alt="Foto de Perfil" class="w-10 h-10 rounded-full">
         </div>
     </div>
 
     <!-- Calendar -->
     <div class="px-4 py-2 bg-white shadow-sm">
-        <div id="day-buttons" class="flex justify-between items-center mt-2">
+        <div id="day-buttons" class="flex flex-wrap justify-between sm:justify-center gap-2 mt-2">
             <button onclick="loadSchedule('days/lunes.html', this)"
-                class="day-button px-5 rounded-full bg-white border-2 border-gray-200">Lunes</button>
+                class="day-button px-5 py-2 rounded-full bg-white border-2 border-gray-200">Lunes</button>
             <button onclick="loadSchedule('days/martes.html', this)"
-                class="day-button px-5 rounded-full bg-white border-2 border-gray-200">Martes</button>
+                class="day-button px-5 py-2 rounded-full bg-white border-2 border-gray-200">Martes</button>
             <button onclick="loadSchedule('days/miercoles.html', this)"
-                class="day-button px-5 rounded-full bg-white border-2 border-gray-200">Miércoles</button>
+                class="day-button px-5 py-2 rounded-full bg-white border-2 border-gray-200">Miércoles</button>
             <button onclick="loadSchedule('days/jueves.html', this)"
-                class="day-button px-5 rounded-full bg-white border-2 border-gray-200">Jueves</button>
+                class="day-button px-5 py-2 rounded-full bg-white border-2 border-gray-200">Juves</button>
             <button onclick="loadSchedule('days/viernes.html', this)"
-                class="day-button px-5 rounded-full bg-white border-2 border-gray-200">Viernes</button>
+                class="day-button px-5 py-2 rounded-full bg-white border-2 border-gray-200">Viernes</button>
         </div>
     </div>
+
 
     <!-- Schedule -->
     <div id="schedule-container" class="mt-4 p-4">
